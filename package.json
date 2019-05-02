@@ -1,8 +1,8 @@
 {
-  "name": "svelte-types",
-  "version": "1.0.0",
+  "name": "@pyoner/svelte-types",
+  "version": "3.1.0",
   "description": "Svelte d.ts",
-  "main": "index.js",
+  "types": "types/svelte/index.d.ts",
   "author": "Jungle",
   "license": "MIT",
   "devDependencies": {
