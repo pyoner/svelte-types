@@ -28,3 +28,23 @@ declare module "svelte" {
 
   export function createEventDispatcher<D>(): (type: string, detail: D) => void;
 }
+
+declare module "svelte/store" {
+  /// <reference path="./store.d.ts" />
+}
+
+declare module "svelte/motion" {
+  /// <reference path="./motion.d.ts" />
+}
+
+declare module "svelte/transition" {
+  /// <reference path="./transition.d.ts" />
+}
+
+declare module "svelte/animate" {
+  /// <reference path="./animate.d.ts" />
+}
+
+declare module "svelte/easing" {
+  /// <reference path="./easing.d.ts" />
+}
