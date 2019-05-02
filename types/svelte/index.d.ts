@@ -3,6 +3,14 @@
 // Definitions by: Jungle <https://github.com/pyoner>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
+declare module "*.svelte" {
+  interface Component {
+    new (options: any): any;
+  }
+  const component: Component;
+  export default component;
+}
+
 export function afterUpdate(fn: () => void): void;
 
 export function beforeUpdate(fn: () => void): void;
