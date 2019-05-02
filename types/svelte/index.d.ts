@@ -11,7 +11,7 @@ declare module "*.svelte" {
   export default component;
 }
 
-declare module svelte {
+declare module "svelte" {
   export function afterUpdate(fn: () => void): void;
 
   export function beforeUpdate(fn: () => void): void;
