@@ -66,6 +66,10 @@ export interface Draw extends BaseOptions {
 export function draw(node: Node, opts: Partial<DrawOptions>): Draw;
 
 // crossfade
+export interface FallbackParams<K = any> {
+  key: K;
+}
+
 export type DurationFn = (n: number) => number;
 
 export interface CrossfadeParams {
@@ -74,10 +78,8 @@ export interface CrossfadeParams {
   easing(value: number): number;
 }
 
-export interface CrossfadeOptions {
-  fallback(node: Node, params: Partial<CrossfadeParams>, intro: boolean): void;
-  duration: number | DurationFn;
-  delay: number;
+export interface CrossfadeOptions<K> extends CrossfadeParams {
+  fallback(node: Node, params: FallbackParams<K>, intro: boolean): void;
 }
 
 export interface Crossfade extends BaseOptions {
@@ -90,6 +92,6 @@ export type CrossfadeFn = (
   params: Partial<CrossfadeParams>
 ) => () => Crossfade;
 
-export function crossfade(
-  opts: Partial<CrossfadeOptions>
+export function crossfade<K>(
+  opts: Partial<CrossfadeOptions<K>>
 ): [CrossfadeFn, CrossfadeFn];
