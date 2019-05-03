@@ -1,6 +1,6 @@
 {
   "name": "@pyoner/svelte-types",
-  "version": "3.1.0",
+  "version": "3.1.0-1",
   "description": "Typescript definitions for Svelte v3 (*.d.ts)",
   "keywords": [
     "svelte",
