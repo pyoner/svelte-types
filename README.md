@@ -2,7 +2,7 @@
 
 ## Install
 ```bash
-npm i @pyoner/svelte-types
+npm i -D @pyoner/svelte-types
 ```
 
 ## How to use?
