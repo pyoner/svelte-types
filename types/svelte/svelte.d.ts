@@ -21,5 +21,5 @@ declare module "svelte" {
 
   export function tick(): Promise<void>;
 
-  export function createEventDispatcher<D>(): (type: string, detail: D) => void;
+  export function createEventDispatcher<D>(): (type: string, detail?: D) => void;
 }
