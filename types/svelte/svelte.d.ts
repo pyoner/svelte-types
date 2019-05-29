@@ -1,10 +1,10 @@
 declare module "*.svelte" {
   interface ComponentOptions {
-    target?: HTMLElement;
-    anchor: HTMLElement | null;
-    props: {};
-    hydrate: boolean;
-    intro: boolean;
+    target: HTMLElement;
+    anchor?: HTMLElement | null;
+    props?: {};
+    hydrate?: boolean;
+    intro?: boolean;
   }
 
   interface Component {
