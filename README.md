@@ -1,3 +1,7 @@
+# Attention!
+The project moved to this monorepo https://github.com/pyoner/svelte-typescript
+
+
 # Typescript definitions for Svelte v3
 
 ## Install
