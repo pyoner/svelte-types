@@ -19,6 +19,6 @@
     "node": ">=6.0.0"
   },
   "devDependencies": {
-    "svelte": "^3.1.0"
+    "svelte": "^4.2.19"
   }
 }
